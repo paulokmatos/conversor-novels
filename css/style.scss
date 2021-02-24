@@ -1,0 +1,8 @@
+$maincolor: #0984e3;
+$branco: white;
+@mixin bordas {
+    border-radius: 5px;
+    outline: none;
+}
+@import 'body';
+@import 'conteudo';

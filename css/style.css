@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  height: 100vh;
+  width: 100%;
+  background: url(../img/bg.jpg) no-repeat;
+  background-size: cover;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: absolute;
+  background: transparent;
+  width: 80vw;
+  height: 500px;
+  border-radius: 15px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.container .titulo {
+  text-shadow: 2px 2px 8px #111;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  height: 40px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.container .item {
+  text-align: center;
+  width: 50%;
+}
+
+.container .item input {
+  color: #111;
+  border: solid 2px white;
+  width: calc(70% - 20px);
+  height: 50px;
+  border: solid 1px white;
+  text-align: center;
+  font-size: 20px;
+  background: transparent;
+  -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  outline: none;
+}
+
+.container .item input::-webkit-input-placeholder {
+  color: #111;
+}
+
+.container .item input:-ms-input-placeholder {
+  color: #111;
+}
+
+.container .item input::-ms-input-placeholder {
+  color: #111;
+}
+
+.container .item input::placeholder {
+  color: #111;
+}
+
+.container .seletor {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .seletor select {
+  text-align: center;
+  color: white;
+  background-color: #0984e3;
+  font-size: 17px;
+  margin-top: 15%;
+  width: 60%;
+  height: 2em;
+  border-radius: 5px;
+  outline: none;
+}
+
+.container button {
+  border-top: 20px;
+  font-size: 40px;
+  color: white;
+  border: solid 1px #0984e3;
+  background: #4e9ff0;
+  width: 90px;
+  height: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+}
+
+.container button:hover {
+  background-color: #0984e3;
+}
+
+@media (max-width: 600px) {
+  .container .item {
+    width: 100%;
+  }
+  .container .seletor select {
+    margin-top: 5%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
